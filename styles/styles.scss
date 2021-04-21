@@ -1,0 +1,23 @@
+// font-family: 'Chivo', sans-serif;
+:root {
+    --logo-green: #54E6AF;
+    --very-lght-grey: #C2CBE5;
+    --lght-grey: #5A668A;
+    --very-dark-grey: #2C344B;
+    --almost-black: #121725;
+    --white: #FFFFFF;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+  }
