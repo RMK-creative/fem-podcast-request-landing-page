@@ -1,12 +1,15 @@
+/****** VARIABLES ******/
 :root {
-  --logo-green: #54E6AF;
-  --very-lght-grey: #C2CBE5;
-  --lght-grey: #5A668A;
-  --very-dark-grey: #2C344B;
-  --almost-black: #121725;
-  --white: #FFFFFF;
+  --color-logo-green: #54E6AF;
+  --color-very-lght-grey: #C2CBE5;
+  --color-lght-grey: #5A668A;
+  --color-very-dark-grey: #2C344B;
+  --color-almost-black: #121725;
+  --color-white: #FFFFFF;
+  --color-error-red: #FB3E3E;
 }
 
+/******  ******/
 *,
 *::before,
 *::after {
@@ -19,4 +22,37 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  font-family: 'Chivo', sans-serif;
+  background-color: var(--color-almost-black);
+}
+
+ul {
+  list-style: none;
+}
+
+/****** FONT STYLING ******/
+h1 {
+  font-size: 1.625rem;
+  line-height: 2.375rem;
+  color: var(--color-white);
+}
+
+h1 span {
+  color: var(--color-logo-green);
+}
+
+.main__text {
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  color: var(--color-white);
+}
+
+.main__error-msg {
+  font-size: 0.75rem;
+  color: var(--color-error-red);
+}
+
+.main__input {
+  font-size: 0.875rem;
+  color: var(--color-lght-grey);
 }
