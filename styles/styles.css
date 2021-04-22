@@ -23,7 +23,9 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: 'Chivo', sans-serif;
-  background-color: var(--color-almost-black);
+  background-image: url(../assets/assets/mobile/image-host.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 ul {
