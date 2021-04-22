@@ -6,19 +6,41 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/styles.css">
   <title>Frontend Mentor | Pod request access landing page</title>
 </head>
 <body>
   <main>
-    <section class="container">
-      <h1>Publish your podcasts <span>everywhere.</span></h1>
+    <section class="main__wrapper">
+      <div class="logo" alt="">
+        <img src="./assets/assets/desktop/logo.svg" alt="logo">
+        <p>Pod</p>
+      </div>
 
-      <p>Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, 
-      Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
+        <article class="main__container">
+          <header>
+            <h1><span>Publish your podcasts </span>everywhere.</h1>
+          </header>
 
-      <button>Request access</button>
+          <p class="main__text">Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify,
+          Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
+
+          <div class="main__socials">
+            <ul class="main__socials-list">
+              <li class="main__socials-item"><img src="./assets/assets/desktop/spotify.svg" alt=""></li>
+              <li class="main__socials-item"><img src="./assets/assets/desktop/apple-podcast.svg" alt=""></li>
+              <li class="main__socials-item"><img src="./assets/assets/desktop/google-podcasts.svg" alt=""></li>
+              <li class="main__socials-item"><img src="./assets/assets/desktop/pocket-casts.svg" alt=""></li>
+            </ul>
+          </div>
+
+          <form class="main__form">
+            <input class="main__input" type="email" id="email" placeholder="Email address" aria-label="email" />
+            <p class="main__error-msg">Oops! Please check your email</p>
+          <button type="submit" id="email-submit">Request access</button>
+          </form>
+        </article>
     </section>
   </main>
 </body>
