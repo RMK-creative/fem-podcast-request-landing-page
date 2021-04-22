@@ -30,6 +30,10 @@ ul {
   list-style: none;
 }
 
+::-moz-placeholder {
+  opacity: 1;
+}
+
 /****** FONT STYLING ******/
 h1 {
   font-size: 1.625rem;
