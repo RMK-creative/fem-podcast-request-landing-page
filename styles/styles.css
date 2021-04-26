@@ -39,6 +39,7 @@ ul {
 /****** FONT STYLING ******/
 h1 {
   font-size: 1.625rem;
+  text-transform: uppercase;
   line-height: 2.375rem;
   color: var(--color-white);
 }
@@ -61,4 +62,9 @@ h1 span {
 .main__input {
   font-size: 0.875rem;
   color: var(--color-lght-grey);
+}
+
+.main__wrapper {
+  min-height: 100vh;
+  background-color: rgba(18, 23, 37, 0.9);
 }
