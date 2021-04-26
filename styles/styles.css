@@ -38,10 +38,11 @@ ul {
 
 /****** FONT STYLING ******/
 h1 {
-  font-size: 1.625rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   line-height: 2.375rem;
   color: var(--color-white);
+  margin-bottom: 1.5rem;
 }
 
 h1 span {
@@ -52,6 +53,7 @@ h1 span {
   font-size: 0.9375rem;
   line-height: 1.5625rem;
   color: var(--color-white);
+  margin-bottom: 3rem;
 }
 
 .main__error-msg {
@@ -62,9 +64,57 @@ h1 span {
 .main__input {
   font-size: 0.875rem;
   color: var(--color-lght-grey);
+  padding-left: 3rem;
+}
+
+.logo {
+  padding: 1rem 2rem;
 }
 
 .main__wrapper {
   min-height: 100vh;
   background-color: rgba(18, 23, 37, 0.9);
+}
+
+.main__container {
+  padding: 2rem;
+  text-align: center;
+}
+
+.main__socials-list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+.main__socials-item {
+  height: 0.5rem;
+}
+
+.main__input {
+  width: 100%;
+  border-style: none;
+  border-radius: 2rem;
+  padding: 0.8rem 0 0.8rem 2rem;
+  background-color: var(--color-very-dark-grey);
+  color: var(--color-white);
+  font-family: inherit;
+  letter-spacing: 0.5px;
+  font-weight: bolder;
+}
+
+button {
+  width: 100%;
+  padding: 0.8rem 0;
+  background-color: var(--color-logo-green);
+  border-style: none;
+  border-radius: 2rem;
+  color: var(--color-almost-black);
+  font-size: 0.875rem;
+  font-weight: bolder;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  font-family: inherit;
 }
