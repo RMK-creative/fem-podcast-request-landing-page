@@ -3,6 +3,7 @@
 
 :root {
     --color-logo-green: #54E6AF;
+    --color-button-hover-green: #B3FFE2;
     --color-very-lght-grey: #C2CBE5;
     --color-lght-grey: #5A668A;
     --color-very-dark-grey: #2C344B;
@@ -42,11 +43,12 @@ ul {
 /****** FONT STYLING ******/
 
 h1 {
-    font-size: 1.5rem;
+    font-size: 1.55rem;
     text-transform: uppercase;
     line-height: 2.375rem;
     color: var(--color-white);
     margin-bottom: 1.5rem;
+    margin-top: 3.5rem;
 }
 
 h1 span {
@@ -57,19 +59,22 @@ h1 span {
     font-size: 0.9375rem;
     line-height: 1.5625rem;
     color: var(--color-very-lght-grey);
-    margin-bottom: 3rem;
-    
+    margin-bottom: 2.5rem;
 }
 
 .main__error-msg {
     font-size: 0.75rem;
     color: var(--color-error-red);
+    text-align: left;
+    padding-left: 2rem;
+    min-height: 1.5rem;
 }
 
 .main__input {
     font-size: 0.875rem;
     color: var(--color-lght-grey);
     padding-left: 3rem;
+    opacity: 0.6;
 }
 
 .logo {
@@ -82,7 +87,7 @@ h1 span {
 }
 
 .main__container {
-    padding: 2rem;
+    padding: 1.5rem;
     text-align: center;
     max-width: 45rem;
 }
@@ -92,7 +97,7 @@ h1 span {
 	justify-content: space-between;
     width: 100%;
 	margin: 0 auto;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .main__socials-list img {
@@ -130,3 +135,34 @@ button {
     text-transform: capitalize;
     font-family: inherit;
 }
+
+button:hover {
+    background-color: var(--color-button-hover-green);
+}
+
+
+/****** TABLET ******/
+
+@media only screen and (min-width: 26.875rem) {
+    body {
+        background-color: var(--color-almost-black);
+        background-image: none;
+    }
+
+    .main__wrapper {
+        background-image: url(../assets/assets/tablet/image-host.jpg);
+        background-repeat: no-repeat;
+        background-position-x: 30rem;
+    }
+    
+    .main__container {
+        background-color: var(--color-almost-black);
+        min-width: 39rem;
+        border: 1px solid red;
+        position: relative;
+        transform: translate(0, 10rem);
+    }
+}
+
+
+/****** DESKTOP ******/
