@@ -71,13 +71,6 @@ h1 span {
   min-height: 1.5rem;
 }
 
-.main__input {
-  font-size: 0.875rem;
-  color: var(--color-lght-grey);
-  padding-left: 3rem;
-  opacity: 0.6;
-}
-
 .logo {
   padding: 1rem 2rem;
   display: inline-block;
@@ -113,6 +106,10 @@ h1 span {
 }
 
 .main__input {
+  font-size: 0.875rem;
+  color: var(--color-lght-grey);
+  padding-left: 3rem;
+  opacity: 0.6;
   width: 100%;
   border-style: none;
   border-radius: 2rem;
@@ -150,7 +147,7 @@ button:hover {
     background-image: none;
     background-image: url(../assets/assets/tablet/image-host.jpg);
     background-size: inherit;
-    background-position: right;
+    background-position: top right;
     background-repeat: no-repeat;
   }
 
@@ -160,15 +157,37 @@ button:hover {
 
   .main__container {
     background-color: var(--color-almost-black);
-    min-width: 39rem;
+    min-width: 41.5rem;
     position: relative;
-    transform: translate(0, 7.5rem);
+    transform: translate(0, 6.5rem);
+  }
+
+  .main__text {
+    max-width: 25rem;
+    text-align: left;
   }
 
   h1 {
     font-size: 2.8rem;
     text-align: left;
     line-height: 3.4rem;
+  }
+
+  .logo {
+    padding: 3rem 2rem;
+    display: inline-block;
+  }
+
+  .main__socials-list {
+    justify-content: left;
+  }
+
+  .main__socials-list img {
+    width: 6rem;
+  }
+
+  li {
+    margin: 1rem;
   }
 }
 
