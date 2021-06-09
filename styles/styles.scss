@@ -112,6 +112,8 @@ h1 span {
 .main__form {
   max-width: 26rem;
   order: 4;
+  display: flex;
+  flex-direction: column;
 }
 
 .main__input {
@@ -138,7 +140,7 @@ button {
   border-radius: 2rem;
   color: var(--color-almost-black);
   font-size: 0.875rem;
-  font-weight: bolder;
+  font-weight: 700;
   letter-spacing: 0.5px;
   text-transform: capitalize;
   font-family: inherit;
@@ -146,6 +148,7 @@ button {
 
 button:hover {
   background-color: var(--color-button-hover-green);
+  cursor: pointer;
 }
 
 .footer__dots {
@@ -170,16 +173,16 @@ button:hover {
     background-color: transparent;
   }
 
+  .logo {
+    padding: 3rem 2rem;
+    display: inline-block;
+  }
+
   .main__container {
     background-color: var(--color-almost-black);
     min-width: 41.5rem;
     position: relative;
     transform: translate(0, 6.5rem);
-  }
-
-  .main__text {
-    max-width: 25rem;
-    text-align: left;
   }
 
   h1 {
@@ -188,9 +191,9 @@ button:hover {
     line-height: 3.4rem;
   }
 
-  .logo {
-    padding: 3rem 2rem;
-    display: inline-block;
+  .main__text {
+    max-width: 25rem;
+    text-align: left;
   }
 
   .main__socials {
@@ -211,7 +214,11 @@ button:hover {
   }
 
   .main__form {
+    flex-direction: row;
     order: 3;
+    background-color: var(--color-very-dark-grey);
+    border-radius: 2rem;
+    padding: 0.3rem;
   }
 
   .footer__dots {
