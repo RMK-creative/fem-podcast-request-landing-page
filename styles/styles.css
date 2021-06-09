@@ -47,6 +47,7 @@ h1 {
   color: var(--color-white);
   margin-bottom: 1.5rem;
   margin-top: 3.5rem;
+  order: 1;
 }
 
 h1 span {
@@ -58,6 +59,7 @@ h1 span {
   line-height: 1.5625rem;
   color: var(--color-very-lght-grey);
   margin-bottom: 2.5rem;
+  order: 2;
 }
 
 .main__error-msg {
@@ -83,6 +85,12 @@ h1 span {
   padding: 1.5rem;
   text-align: center;
   max-width: 30rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.main__socials {
+  order: 3;
 }
 
 .main__socials-list {
@@ -100,6 +108,7 @@ h1 span {
 
 .main__form {
   max-width: 26rem;
+  order: 4;
 }
 
 .main__input {
@@ -136,6 +145,12 @@ button:hover {
   background-color: var(--color-button-hover-green);
 }
 
+.footer__dots {
+  position: absolute;
+  width: 1px;
+  left: -100px;
+}
+
 /****** TABLET ******/
 @media only screen and (min-width: 37.5rem) {
   body {
@@ -168,14 +183,28 @@ button:hover {
     padding: 3rem 2rem;
     display: inline-block;
   }
+  .main__socials {
+    order: 4;
+  }
   .main__socials-list {
     justify-content: left;
+    order: 4;
   }
   .main__socials-list img {
     width: 6rem;
   }
   li {
     margin: 1rem;
+  }
+  .main__form {
+    order: 3;
+  }
+  .footer__dots {
+    position: relative;
+    bottom: -10px;
+    left: 2rem;
+    width: 50%;
+    margin-top: 5rem;
   }
 }
 
