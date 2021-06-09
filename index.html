@@ -1,46 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/styles.css">
-  <title>Frontend Mentor | Pod request access landing page</title>
-</head>
-<body>
-  <main>
-    <section class="main__wrapper">
-      <div class="logo" alt="">
-        <img src="./assets/assets/desktop/logo.svg" alt="logo" />
-      </div>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Frontend Mentor | Pod request access landing page</title>
+  </head>
+
+  <body>
+    <main>
+      <section class="main__wrapper">
+        <div class="logo" alt="">
+          <img src="./assets/assets/desktop/logo.svg" alt="logo" />
+        </div>
 
         <article class="main__container">
           <header>
             <h1><span>Publish your podcasts </span>everywhere.</h1>
           </header>
 
-          <p class="main__text">Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify,
-          Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
+          <p class="main__text">
+            Upload your audio to Pod with a single click. We’ll then distribute
+            your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket
+            Casts and more!
+          </p>
 
           <div class="main__socials">
             <ul class="main__socials-list">
-              <li class="main__socials-item"><img src="./assets/assets/desktop/spotify.svg" alt="" /></li>
-              <li class="main__socials-item"><img src="./assets/assets/desktop/apple-podcast.svg" alt="" /></li>
-              <li class="main__socials-item"><img src="./assets/assets/desktop/google-podcasts.svg" alt="" /></li>
-              <li class="main__socials-item"><img src="./assets/assets/desktop/pocket-casts.svg" alt="" /></li>
+              <li class="main__socials-item">
+                <img src="./assets/assets/desktop/spotify.svg" alt="" />
+              </li>
+              <li class="main__socials-item">
+                <img src="./assets/assets/desktop/apple-podcast.svg" alt="" />
+              </li>
+              <li class="main__socials-item">
+                <img src="./assets/assets/desktop/google-podcasts.svg" alt="" />
+              </li>
+              <li class="main__socials-item">
+                <img src="./assets/assets/desktop/pocket-casts.svg" alt="" />
+              </li>
             </ul>
           </div>
 
           <form class="main__form">
-            <input class="main__input" type="email" id="email" name="email" placeholder="Email address" aria-label="email" required />
+            <input
+              class="main__input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email address"
+              aria-label="email"
+              required
+            />
             <p class="main__error-msg" id="main__error-msg"></p>
-          <button type="submit" id="email-submit">Request access</button>
+            <button type="submit" id="email-submit">Request access</button>
           </form>
         </article>
-    </section>
-  </main>
-</body>
+        <footer>
+          <img
+            class="footer__dots"
+            src="./assets/assets/desktop/bg-pattern-dots.svg"
+            alt=""
+          />
+        </footer>
+      </section>
+    </main>
+  </body>
 </html>
