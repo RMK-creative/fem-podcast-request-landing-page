@@ -41,10 +41,9 @@ ul {
   opacity: 1;
 }
 
-/****** FONT STYLING ******/
-
 h1 {
   font-size: 1.55rem;
+  font-weight: 300;
   text-transform: uppercase;
   line-height: 2.375rem;
   color: var(--color-white);
@@ -59,7 +58,8 @@ h1 span {
 
 .main__text {
   font-size: 0.9375rem;
-  line-height: 1.5625rem;
+  opacity: 0.8;
+  line-height: 1.5;
   color: var(--color-very-lght-grey);
   margin-bottom: 2.5rem;
   order: 2;
@@ -102,11 +102,27 @@ h1 span {
   width: 100%;
   margin: 0 auto;
   margin-bottom: 3rem;
+  padding: 0 0.8rem;
 }
 
 .main__socials-list img {
-  width: 4rem;
   opacity: 0.6;
+}
+
+.spotify {
+  width: 3.5rem;
+}
+
+.apple {
+  width: 3rem;
+}
+
+.google {
+  width: 5rem;
+}
+
+.pocket {
+  width: 4.5rem;
 }
 
 .main__form {
@@ -151,13 +167,21 @@ button:hover {
   cursor: pointer;
 }
 
+.main__error-msg {
+  font-size: 0.75rem;
+}
+
 .footer__dots {
   position: absolute;
   width: 1px;
   left: -100px;
 }
 
-/****** TABLET ******/
+/******************************************
+
+                TABLET 
+
+******************************************/
 
 @media only screen and (min-width: 37.5rem) {
   body {
@@ -186,13 +210,14 @@ button:hover {
   }
 
   h1 {
-    font-size: 2.8rem;
+    font-size: 3em;
     text-align: left;
     line-height: 3.4rem;
   }
 
   .main__text {
-    max-width: 25rem;
+    font-size: 1.125rem;
+    max-width: 28rem;
     text-align: left;
   }
 
@@ -203,14 +228,29 @@ button:hover {
   .main__socials-list {
     justify-content: left;
     order: 4;
-  }
-
-  .main__socials-list img {
-    width: 6rem;
+    margin-top: 4rem;
+    margin-bottom: 7rem;
   }
 
   li {
-    margin: 1rem;
+    margin-right: 2.5rem;
+  }
+
+  .spotify {
+    width: 5rem;
+  }
+
+  .apple {
+    width: 4.5rem;
+  }
+
+  .google {
+    width: 7rem;
+    padding-top: 0.3rem;
+  }
+
+  .pocket {
+    width: 7rem;
   }
 
   .main__form {
@@ -225,9 +265,13 @@ button:hover {
     position: relative;
     bottom: -10px;
     left: 2rem;
-    width: 50%;
+    width: 35%;
     margin-top: 5rem;
   }
 }
 
-/****** DESKTOP ******/
+/******************************************
+
+                DESKTOP
+
+******************************************/
