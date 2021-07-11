@@ -25,7 +25,7 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: "Chivo", sans-serif;
-  background-image: url(../assets/assets/mobile/image-host.jpg);
+  background-image: url(../assets/mobile/image-host.jpg);
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
@@ -185,7 +185,7 @@ button:hover {
   body {
     background-color: var(--color-almost-black);
     background-image: none;
-    background-image: url(../assets/assets/tablet/image-host.jpg);
+    background-image: url(../assets/tablet/image-host.jpg);
     background-size: inherit;
     background-position: top right;
     background-repeat: no-repeat;
@@ -196,7 +196,7 @@ button:hover {
   }
 
   .main__wrapper::after {
-    content: url(/assets/assets/desktop/bg-pattern-dots.svg);
+    content: url(/assets/desktop/bg-pattern-dots.svg);
     position: relative;
     bottom: -9rem;
   }
@@ -283,7 +283,7 @@ button:hover {
 ******************************************/
 @media only screen and (min-width: 90rem) {
   body {
-    background-image: url(/assets/assets/desktop/image-host.jpg);
+    background-image: url(/assets/desktop/image-host.jpg);
   }
 
   .main__container {
