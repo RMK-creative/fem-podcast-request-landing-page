@@ -11,8 +11,6 @@
   --color-error-red: #fb3e3e;
 }
 
-/******  ******/
-
 *,
 *::before,
 *::after,
@@ -179,7 +177,7 @@ button:hover {
 
 /******************************************
 
-                TABLET 
+                TABLET 768px
 
 ******************************************/
 
@@ -197,6 +195,12 @@ button:hover {
     background-color: transparent;
   }
 
+  .main__wrapper::after {
+    content: url(/assets/assets/desktop/bg-pattern-dots.svg);
+    position: relative;
+    bottom: -9rem;
+  }
+
   .logo {
     padding: 3rem 2rem;
     display: inline-block;
@@ -204,6 +208,7 @@ button:hover {
 
   .main__container {
     background-color: var(--color-almost-black);
+    opacity: 1;
     min-width: 41.5rem;
     position: relative;
     transform: translate(0, 6.5rem);
@@ -260,18 +265,34 @@ button:hover {
     border-radius: 2rem;
     padding: 0.3rem;
   }
-
-  .footer__dots {
-    position: relative;
-    bottom: -10px;
-    left: 2rem;
-    width: 35%;
-    margin-top: 5rem;
-  }
 }
 
 /******************************************
 
-                DESKTOP
+                SCREEN 900px
 
 ******************************************/
+
+@media only screen and (min-width: 56.25rem) {
+}
+
+/****************************************** 
+
+              DESKTOP 1440px 
+
+******************************************/
+@media only screen and (min-width: 90rem) {
+  body {
+    background-image: url(/assets/assets/desktop/image-host.jpg);
+  }
+
+  .main__container {
+    transform: translate(0, 0.5rem);
+    margin-bottom: 0;
+  }
+
+  .main__wrapper::after {
+    bottom: 11.8rem;
+    left: 75rem;
+  }
+}
