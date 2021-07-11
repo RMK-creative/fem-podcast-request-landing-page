@@ -25,7 +25,7 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: "Chivo", sans-serif;
-  background-image: url(../assets/mobile/image-host.jpg);
+  background-image: url(/assets/mobile/image-host.jpg);
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
@@ -185,7 +185,7 @@ button:hover {
   body {
     background-color: var(--color-almost-black);
     background-image: none;
-    background-image: url(../assets/tablet/image-host.jpg);
+    background-image: url(/assets/tablet/image-host.jpg);
     background-size: inherit;
     background-position: top right;
     background-repeat: no-repeat;
