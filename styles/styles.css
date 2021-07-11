@@ -265,12 +265,16 @@ button:hover {
   body {
     background-image: url(/assets/desktop/image-host.jpg);
   }
+  .logo {
+    margin-left: 7rem;
+  }
   .main__container {
     transform: translate(0, 0.5rem);
     margin-bottom: 0;
+    padding-left: 9.5rem;
   }
   .main__wrapper::after {
-    bottom: 11.8rem;
+    bottom: 15rem;
     left: 75rem;
   }
 }
